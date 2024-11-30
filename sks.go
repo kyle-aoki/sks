@@ -8,11 +8,8 @@ const (
 	SAVE   = "s"
 	FILTER = "f"
 	DELETE = "d"
-	URL    = "h"
 	VALUE  = "v"
-
 	ROTATE = "r"
-
 	LENGTH = "l"
 )
 
@@ -22,11 +19,8 @@ var (
 	deleteFlag = flag.String(DELETE, "", "")
 	valueFlag  = flag.String(VALUE, "", "")
 	rotateFlag = flag.String(ROTATE, "", "")
-
 	lengthFlag = flag.Int(LENGTH, 30, "")
 )
-
-var args []string
 
 func main() {
 	defer panicRecover()
